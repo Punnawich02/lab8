@@ -12,12 +12,13 @@ int main()
 
     cout << "Fahsai: Wow!!! " << name << " is a really cool name.\n";
     
-    int st_ID;
+    int st_ID ,gear;
     cout << "Fahsai: I think you are an Engineering student. What is your student ID?\n";
     cout << name << ": ";
     cin >> st_ID;
     cin.ignore();
-    cout << "Fahsai: I think you may be GEAR "<< int(st_ID/1e7) - 12 << ". I have a free movie ticket for you.";
+    gear = (st_ID/1e7) - 12;
+    cout << "Fahsai: I think you may be GEAR "<< gear << ". I have a free movie ticket for you.";
     cout << "Fahsai: Let's go to the cinema together!!!\n" ;
     
     string movie;
