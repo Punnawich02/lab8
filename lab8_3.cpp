@@ -3,6 +3,18 @@ using namespace std;
 
 char before(char x){
 	//Write your function definition here
+	if(x == 'A')
+	{
+		return 'Z';
+	}
+	if (x > 'Z')
+	{
+		return '0';
+	}
+	else
+	{
+		return x-1;
+	}
 }
 
 int main(){
